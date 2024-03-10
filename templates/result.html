@@ -1,0 +1,29 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GC Content Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>My Bioinformatics Tool</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <!-- Add more navbar links as needed -->
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>GC Content Result</h2>
+        <div class="result-container">
+            <p class="result-content">The GC content of the DNA sequence is: {{ gc_content }}%</p>
+        </div>
+    </div>
+</body>
+</html>

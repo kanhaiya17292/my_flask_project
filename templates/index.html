@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate GC Content</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>My Bioinformatics Tool</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <!-- Add more navbar links as needed -->
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Calculate GC Content</h2>
+        <form action="/calculate_gc_content" method="post">
+            <label for="sequence">Enter DNA Sequence:</label><br>
+            <textarea id="sequence" name="sequence" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
